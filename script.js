@@ -6,7 +6,6 @@ function simularinvestimento () {
     const juros = document.getElementById('juros').value / 100;
     const tempo = document.getElementById('tempo').value;
     const resultado = document.getElementById('resultado');
-
     
     if (nome !== '' && valorAplicado !== '' && juros !== '' && tempo !== '') {
         const valorTotal = (valorAplicado * ((((1 + juros) ** tempo) - 1) / juros)).toFixed(2)
