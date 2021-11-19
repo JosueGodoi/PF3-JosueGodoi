@@ -10,7 +10,7 @@ function simularinvestimento () {
     
     if (nome !== '' && valorAplicado !== '' && juros !== '' && tempo !== '') {
         const valorTotal = (valorAplicado * ((((1 + juros) ** tempo) - 1) / juros)).toFixed(2)
-        resultado.textContent = `Olá ${nome}, se você aplicar ${valorAplicado}, à taxa de juros de ${juros * 100}% ao mês, durante ${tempo} meses, acumulará uma poupança de ${valorTotal}`;
+        resultado.textContent = `Olá ${nome}, se você aplicar R$ ${valorAplicado}, à taxa de juros de ${juros * 100}% ao mês, durante ${tempo} meses, acumulará uma poupança de R$ ${valorTotal}`;
     }else {
         resultado.textContent = 'Preencha todos os camps para simular o investimento';
     }
